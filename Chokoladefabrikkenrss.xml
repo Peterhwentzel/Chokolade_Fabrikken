@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>Chokoladefabrikkens Blog</title>
+  <link>http://lamp2.sdu.dk/~pewen16/chokoladefabrikken/kageBlog.html</link>
+  <description>Masser af inspirerende opskrifter på chokoladekager</description>
+  <item>
+    <title>Ny årstid, nye ingredienser</title>
+    <link>http://lamp2.sdu.dk/~pewen16/chokoladefabrikken/kageNews1.html</link>
+    <description>Vi byder efteråret velkommen med helt nye opskrifter som er inspireret af årstiden, vi snakker om alt fra enebær, tranebær til det halloween inspireret køkken med græskar som ingredienser for vores nye efterårs kollektion af fremragende chokoladekager</description>
+    <enclosure url="http://lamp2.sdu.dk/~pewen16/chokoladefabrikken/soundfiles/nyhed1.mp3"
+    length="860298" type="audio/mpeg" /> 
+  </item>
+  <item>
+    <title>Julehygge</title>
+    <link>http://lamp2.sdu.dk/~pewen16/chokoladefabrikken/kageNews2.html</link>
+    <description>Julen nærmer sig i hastige skridt, så skal julebageriet i gang igen i år og her på chokoladefabrikken er vi spændte på at fremvise alle de nye opskrifter vi har planer om at dele med jer!</description>
+    <enclosure url="http://lamp2.sdu.dk/~pewen16/chokoladefabrikken/soundfiles/nyhed1.mp3"
+    length="335431" type="audio/mpeg" />
+  </item>
+  <item>
+    <title>Mette Blomsterberg udgået pga. doping</title>
+    <link>http://lamp2.sdu.dk/~pewen16/chokoladefabrikken/kageNews3.html</link>
+    <description>Mette Blomsterberg er desværre udgået af den store bagedyst på grund af doping og andet snask. Havde man den overbevisning af at forvente hasselnødder og andet godt i hendes kager skal man tro om igen.. </description>
+    <enclosure url="http://lamp2.sdu.dk/~pewen16/chokoladefabrikken/soundfiles/nyhed3.mp3"
+    length="713553" type="audio/mpeg" /> 
+  </item>
+</channel>
+</rss>

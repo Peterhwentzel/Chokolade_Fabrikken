@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chokoladefabrikken</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="mainStylesheet.css">
+</head>
+<body>
+  <header class="container">
+    <div class="row">
+      <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+        <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+        <g>
+          <title>Logo</title>
+          <rect stroke="#7f0000" id="kagebund1" height="11.55859" width="92.53906" y="0" x="3.88672" stroke-width="5" fill="#7f0000" opacity="0"/>
+          <rect stroke="#a88679" id="kagefyld1" height="2.03906" width="92.85547" y="0" x="4.10156" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#a88679" opacity="0"/>
+          <rect id="kagebund2" stroke="#7f0000" height="11.55859" width="92.53906" y="0" x="3.07422" stroke-width="5" fill="#7f0000" opacity="0"/>
+          <rect id="kagefyld2" stroke="#a88679" height="2.03906" width="92.85547" y="0" x="3.86523" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#a88679" opacity="0"/>
+          <rect id="kagebund3" stroke="#7f0000" height="11.55859" width="92.53906" y="0" x="3.70704" stroke-width="5" fill="#7f0000" opacity="0"/>
+          <path stroke="#000000" id="glasur" d="m2.85938,32.17701c0.6149,4.94226 7.37882,4.49297 7.37882,4.49297c0,0 -0.20497,18.19652 -0.20497,18.42117c0,0.22465 2.66457,-16.39933 2.65698,-16.60734c-0.00759,-0.20801 7.79635,-1.81383 7.79635,-1.81383c0,0 2.86954,6.9641 2.86195,6.75609c-0.00759,-0.20801 4.51687,-8.10398 4.51687,-8.10398c0,0 7.78876,4.94226 7.78116,4.73425c-0.00759,-0.20801 5.74668,-2.71242 5.73908,-2.92043c-0.00759,-0.20801 0.41753,19.52777 0.40993,19.31976c-0.00759,-0.20801 8.00132,1.33125 7.99372,1.12324c-0.00759,-0.20801 -0.40234,-18.8871 -0.40993,-19.09511c-0.00759,-0.20801 11.69073,-2.03847 11.68313,-2.24648c-0.00759,-0.20801 7.38642,5.59957 7.37882,5.39156c-0.00759,-0.20801 5.74668,-4.9589 5.73908,-5.16691c-0.00759,-0.20801 8.82119,-0.69058 8.61622,1.1066c-0.20497,1.79719 3.68941,6.06551 3.68941,6.06551c0,0 4.91921,2.24648 4.91162,2.03847c-0.0076,-0.20801 1.64733,-5.18355 1.64733,-5.18355c0,0 4.09935,-7.86269 4.09175,-8.0707c-0.0076,-0.20801 -0.60731,-2.48777 -0.6149,-2.69578c-0.0076,-0.20801 -93.66244,2.45449 -93.66244,2.45449z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#000000" opacity="0"/>
+
+        <!-- Animation til Kagebund 1 -->
+        <animate id="kagebundAnimation1" xlink:href="#kagebund1"
+        attributeName="y" attributeType="XML"
+        from="0" to="84.24609"
+        begin="kagebundAnimation1Fade.end" dur="300ms" fill="freeze"
+        opacity= "1"
+        
+        /> 
+        <animate id="kagebundAnimation1Fade" xlink:href="#kagebund1" attributeName="opacity" attributeType="XML"
+        from="0" to="1"
+        begin="0s" dur="300ms" fill="freeze"
+        />
+        <!-- Animation til Kagefyld 1 -->
+        <animate id="kagefyldAnimation1" xlink:href="#kagefyld1"
+        attributeName="y" attributeType="XML"
+        from="0" to="76.30859"
+        begin="kagefyldAnimation1Fade.end" dur="300ms" fill="freeze"
+        /> 
+        <animate id="kagefyldAnimation1Fade" xlink:href="#kagefyld1" 
+        attributeName="opacity" attributeType="XML"
+        from="0" to="1"
+        begin="kagebundAnimation1.end" dur="300ms" fill="freeze"
+        /> 
+        <!-- Animation til Kagebund 2 -->
+        <animate id="kagebundAnimation2" xlink:href="#kagebund2"
+        attributeName="y" attributeType="XML"
+        from="0" to="58.11914"
+        begin="kagebundAnimation2Fade.end" dur="300ms" fill="freeze"
+        />
+        <animate id="kagebundAnimation2Fade" xlink:href="#kagebund2" 
+        attributeName="opacity" attributeType="XML"
+        from="0" to="1"
+        begin="kagefyldAnimation1.end" dur="300ms" fill="freeze"
+        /> 
+        <!-- Animation til Kagefyld 2 -->
+        <animate id="kagefyldAnimation2" xlink:href="#kagefyld2"
+        attributeName="y" attributeType="XML"
+        from="0" to="49.90625"
+        begin="kagefyldAnimation2Fade.end" dur="300ms" fill="freeze"
+        />
+        <animate id ="kagefyldAnimation2Fade" xlink:href="#kagefyld2" attributeName="opacity" attributeType="XML"
+        from="0" to="1"
+        begin="kagebundAnimation2.end" dur="300ms" fill="freeze"
+        />
+        <!-- Animation til Kagebund 3 -->
+        <animate id="kagebundAnimation3" xlink:href="#kagebund3"
+        attributeName="y" attributeType="XML"
+        from="0" to="31.85742"
+        begin="kagebundAnimation3Fade.end" dur="300ms" fill="freeze"
+        />
+        <animate id="kagebundAnimation3Fade" xlink:href="#kagebund3"
+        attributeName="opacity" attributeType="XML"
+        from="0" to="1"
+        begin="kagefyldAnimation2.end" dur="300ms" fill="freeze"
+        />
+        <!-- Animation til Glasur -->
+        <animate id="glasurAnimation" xlink:href="#glasur"
+        attributeName="opacity" attributeType="XML"
+        from="0" to="1"
+        begin="kagebundAnimation3.end" dur="300ms" fill="freeze"  
+        />
+        </g>
+        </svg>
+      <h1 class="col-sm-4">Chokoladefabrikken</h1>
+      <nav class="col-sm-8 text-right">
+        <a href="#katalog"><p>Katalog</p></a>
+        <a href="#team"><p>Teamet</p></a>
+        <a href="kageBlog.html"><p>Blog</p></a>
+      </nav>
+    </div>
+  </header>
+  <section class="jumbotron">
+  	<div class="container">
+      <div class="row text-center">
+          <h2>Hjemmebagte chokoladekage</h2>
+					<h3>Dette års bedste</h3>
+					<a class="btn btn-danger btn-lg" href="recipe.html" role="button">Se alle</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel -->
+   <div class="slider">
+      <div class="slide active-slide">
+        <div class="container">
+          <div class="row">
+            <div class="slide-copy col-xs-5">
+              <h1>Chokoladefabrikken er stedet for livsnyder</h1>
+              	<p>Dette enkelt sted kan du opdage, indsamle og dele de bedste chokoladekage nyheder, du holder af. Tilføj dine foretrukne kager, smagsvarianter og læs vores blogs om kager og de mennesker der elsker dem!.</p>
+            </div>
+            <div class="slide-img col-xs-7">
+              <img src="images/kage.jpg" width="540px">
+            </div>
+          </div>
+        </div>      
+      </div>
+      <div class="slide">
+        <div class="container">
+          <div class="row">
+            <div class="slide-copy col-xs-5">
+              <h1>Flere dejlige kager</h1>
+              <p>Kage er godt, det er derfor vi spiser det</p>
+            </div>
+            <div class="slide-img col-xs-7">
+              <img src="images/kage6.png">
+            </div>
+          </div>
+        </div>      
+      </div> 
+       <div class="slide">
+        <div class="container">
+          <div class="row">
+            <div class="slide-copy col-xs-5">
+              <h1>Læs dig frem til dejlige kager</h1>
+              <p>Millioner af mennesker spiser chokoladekager hverdag, her på <strong><em>chokoladenfabrikken</em></strong> gør vi alt for at samle de foretrukne og mest udsøgte kager der kan stille selv den værste sult hos en <strong><em>livsnyder</em></strong>.</p>
+            </div>
+            <div class="slide-img col-xs-7">
+              <img src="images/kage4.png">
+            </div>
+          </div>
+        </div>      
+      </div> 
+    </div>
+    <div class="slider-nav">
+      <a  class="arrow-prev">&laquo;</a>
+      <ul class="slider-dots">
+        <li class="dot active-dot">&bull;</li>
+        <li class="dot">&bull;</li>
+        <li class="dot">&bull;</li>
+      </ul>
+     	<a  class="arrow-next">&raquo;</a>
+    </div> 
+  <!-- Katalog section -->
+  <section class="container" id="katalog">
+    <div class="row">
+			<figure class="col-sm-6 katalog">
+      	<figcaption>Hjemmebagte</figcaption>
+        <a href="recipe.html">
+        <img src="images/kage.jpg">
+        </a>
+			</figure>
+      <figure class="col-sm-6 katalog">
+      	<figcaption>Brownies</figcaption>
+        <img src="images/kage3.png">
+			</figure>
+      <!-- RSS WIDGET: http://feed.mikle.com/v1/ Den gamle version men virker-->
+      <!-- start feedwind code --><script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://lamp2.sdu.dk/~pewen16/chokoladefabrikken/Chokoladefabrikkenrss.xml",rssmikle_frame_width: "250",rssmikle_frame_height: "300",frame_height_by_article: "3",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "on",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "Off",rssmikle_title: "on",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#FFFFFF",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#5380CF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "gl1",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M %p",item_description_style: "text",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:250px;"><a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;">RSS Feed Widget</a><!--Please display the above link in your web page according to Terms of Service.--></div><!--  end  feedwind code -->
+
+        <!-- RSS WIDGET: http://feed.mikle.com/ Den nye version men virker ikke-->
+        <!-- start feedwind code -- <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="?widget_parameter=%7B%22sources%22%3A%5B%7B%22source%22%3A%22lamp2.sdu.dk%2F~pewen16%2Fchokoladefabrikken%2FChokoladefabrikkenrss.xml%22%2C%22type%22%3A%22GCAL%22%7D%5D%2C%22name%22%3A%22%22%2C%22width%22%3A0%2C%22height%22%3A0%2C%22height_by_article%22%3A%223%22%2C%22target%22%3A%22_blank%22%2C%22font%22%3A%22Arial%2C%20Helvetica%2C%20sans-serif%22%2C%22title_font_size%22%3A%2216%22%2C%22item_title_font_size%22%3A%2216%22%2C%22item_description_font_size%22%3A%2212%22%2C%22border%22%3A%22on%22%2C%22css_url%22%3A%22%22%2C%22responsive%22%3A%22on%22%2C%22text_direction%22%3A%22left%22%2C%22text_alignment%22%3A%22left%22%2C%22corner%22%3A%22rounded%22%2C%22scroll%22%3A%22on%22%2C%22auto_scroll%22%3A%22on%22%2C%22auto_scroll_direction%22%3A%22up%22%2C%22auto_scroll_step_speed%22%3A%224%22%2C%22auto_scroll_mc_speed%22%3A%2220%22%2C%22sort%22%3A%22new%22%2C%22title%22%3A%22on%22%2C%22title_sentence%22%3A%22%22%2C%22title_link%22%3A%22%22%2C%22title_bgcolor%22%3A%22%23ffffff%22%2C%22title_color%22%3A%22%23505659%22%2C%22title_bgimage%22%3A%22%22%2C%22item_bgcolor%22%3A%22%23ffffff%22%2C%22item_bgimage%22%3A%22%22%2C%22item_title_length%22%3A%2255%22%2C%22item_title_color%22%3A%22%232e7ec8%22%2C%22item_border_bottom%22%3A%22on%22%2C%22item_description%22%3A%22both%22%2C%22item_link%22%3A%22off%22%2C%22item_description_length%22%3A%22100%22%2C%22item_description_color%22%3A%22%23505659%22%2C%22item_date%22%3A%22on%22%2C%22item_date_format%22%3A%22%25b%20%25e%2C%20%25Y%20%25k%3A%25M%22%2C%22item_date_timezone%22%3A%22%22%2C%22item_description_style%22%3A%22text%22%2C%22item_thumbnail%22%3A%22crop%22%2C%22item_thumbnail_selection%22%3A%22auto%22%2C%22article_num%22%3A%2215%22%2C%22item_player%22%3A%22youtube%22%2C%22keyword_inc%22%3A%22%22%2C%22keyword_exc%22%3A%22%22%7D"></script> <!-- end feedwind code -->
+    </div>
+    <div class="row">
+      <figure class="col-sm-6 katalog">
+      	<figcaption>Chockoloade kage</figcaption>
+        <img src="images/kage2.png">
+			</figure>
+      <figure class="col-sm-6 katalog">
+      	<figcaption>Mere chokoladekage</figcaption>
+        <img src="images/kage4.png">
+			</figure>
+  	</div>
+  </section> 
+
+<!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Vores Team</h2>
+                    <h3>Vi elsker <strong> <em>alt</em> </strong> omkring chokoladekager.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div>
+                        <img src="images/peter.jpg">
+                        <h4>Peter</h4>
+                        <ul class="list-inline">
+                            <li>
+                            	<a target="_blank" title="find os på Facebook" href="http://www.facebook.com/peterhaastrup.wentzel"><img alt="find os på Facebook" src="https://login.create.net/images/icons/user/facebook_30x30.png" border=0></a
+                            ></li>
+                            <li>
+                            	<a target="_blank" title="find os på linkedin" href="https://dk.linkedin.com/in/peter-wentzel-759295b2"><img alt="find os på linkedin" src="images/li.png" border=0></a>
+                           </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div>
+                        <img src="images/philip.jpg">
+                        <h4>Philip</h4>
+                        <ul class="list-inline">
+                            <li>
+                                <a target="_blank" title="find os på Facebook" href="http://www.facebook.com/PLACEHOLDER"><img alt="find os på Facebook" src="https://login.create.net/images/icons/user/facebook_30x30.png" border=0></a
+                            ></li>
+                            <li>
+                                <a target="_blank" title="find os på linkedin" href="https://dk.linkedin.com/in/PLACEHOLDER"><img alt="find os på linkedin" src="images/li.png" border=0></a>
+                           </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div>
+                        <img src="images/jeppe.jpg">
+                        <h4>Jeppe</h4>
+                        <ul class="list-inline">
+                			<li>
+                                <a target="_blank" title="find os på Facebook" href="http://www.facebook.com/PLACEHOLDER"><img alt="find os på Facebook" src="https://login.create.net/images/icons/user/facebook_30x30.png" border=0></a
+                            ></li>
+                            <li>
+                                <a target="_blank" title="find os på linkedin" href="https://dk.linkedin.com/in/PLACEHOLDER"><img alt="find os på linkedin" src="images/li.png" border=0></a>
+                           </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+  <footer class="container">
+		<div class="row">
+			<p class="col-sm-4">&copy; 2016 Chokoladefabrikken</p>
+			<ul class="col-sm-8">
+        <li class="col-sm-1">
+          <a target="_blank" title="find os på Facebook" href="http://www.facebook.com/"><img alt="find os på Facebook" src="https://login.create.net/images/icons/user/facebook_30x30.png" border=0></a>
+				</li>
+        <li class="col-sm-1">
+        	<a target="_blank" title="følg os på twitter" href="http://www.twitter.com/"><img alt="følg os på twitter" src="https://login.create.net/images/icons/user/twitter_30x30.png" border=0></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>

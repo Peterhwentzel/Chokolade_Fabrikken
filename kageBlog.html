@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head lang="da">
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Spiders/web crawler vil indeksere hele  hjemmeside. -->
+    <meta name="robots" content="index, follow">
+    <!--Søgemaskiner (Google,Bing,Yahoo) viser/bruger meta-tags i deres søgeresultater, derfor er det vigtigt at skrive en GOD beskrivelse af websitet -->
+    <meta name="description" content="En simpel blog lavet ud fra POSH(Plain Old semantic html) princippet som omhandler chokoladekager" />
+    <!--Keyword til brug for søgemaskiner til at indeksere ens hjemmeside -->
+    <meta name="keywords" content="Cake, Blog,semantic html, POSH" />
+    <!-- W3 CSS framework -->
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>Chokoladekage blog - (med semantic HTML5 layout)</title>
+	<style>
+	body,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-family: "Raleway", sans-serif
+	}
+	#popularPosts img {
+		max-height:35px;
+	}
+	a{
+		display: block;
+		text-decoration:none;
+	}
+	</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+	<!-- Header -->
+	<header id="top" class="w3-container w3-center w3-padding-32">
+		<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+        <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+        <g>
+          <title>Logo</title>
+          <rect stroke="#7f0000" id="kagebund1" height="11.55859" width="92.53906" y="0" x="3.88672" stroke-width="5" fill="#7f0000" opacity="0"/>
+          <rect stroke="#a88679" id="kagefyld1" height="2.03906" width="92.85547" y="0" x="4.10156" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#a88679" opacity="0"/>
+          <rect id="kagebund2" stroke="#7f0000" height="11.55859" width="92.53906" y="0" x="3.07422" stroke-width="5" fill="#7f0000" opacity="0"/>
+          <rect id="kagefyld2" stroke="#a88679" height="2.03906" width="92.85547" y="0" x="3.86523" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#a88679" opacity="0"/>
+          <rect id="kagebund3" stroke="#7f0000" height="11.55859" width="92.53906" y="0" x="3.70704" stroke-width="5" fill="#7f0000" opacity="0"/>
+          <path stroke="#000000" id="glasur" d="m2.85938,32.17701c0.6149,4.94226 7.37882,4.49297 7.37882,4.49297c0,0 -0.20497,18.19652 -0.20497,18.42117c0,0.22465 2.66457,-16.39933 2.65698,-16.60734c-0.00759,-0.20801 7.79635,-1.81383 7.79635,-1.81383c0,0 2.86954,6.9641 2.86195,6.75609c-0.00759,-0.20801 4.51687,-8.10398 4.51687,-8.10398c0,0 7.78876,4.94226 7.78116,4.73425c-0.00759,-0.20801 5.74668,-2.71242 5.73908,-2.92043c-0.00759,-0.20801 0.41753,19.52777 0.40993,19.31976c-0.00759,-0.20801 8.00132,1.33125 7.99372,1.12324c-0.00759,-0.20801 -0.40234,-18.8871 -0.40993,-19.09511c-0.00759,-0.20801 11.69073,-2.03847 11.68313,-2.24648c-0.00759,-0.20801 7.38642,5.59957 7.37882,5.39156c-0.00759,-0.20801 5.74668,-4.9589 5.73908,-5.16691c-0.00759,-0.20801 8.82119,-0.69058 8.61622,1.1066c-0.20497,1.79719 3.68941,6.06551 3.68941,6.06551c0,0 4.91921,2.24648 4.91162,2.03847c-0.0076,-0.20801 1.64733,-5.18355 1.64733,-5.18355c0,0 4.09935,-7.86269 4.09175,-8.0707c-0.0076,-0.20801 -0.60731,-2.48777 -0.6149,-2.69578c-0.0076,-0.20801 -93.66244,2.45449 -93.66244,2.45449z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#000000" opacity="0"/>
+
+        <!-- Animation til Kagebund 1 -->
+        <animate id="kagebundAnimation1" xlink:href="#kagebund1"
+        attributeName="y" attributeType="XML"
+        from="0" to="84.24609"
+        begin="kagebundAnimation1Fade.end" dur="300ms" fill="freeze"
+        opacity= "1"
+        
+        /> 
+        <animate id="kagebundAnimation1Fade" xlink:href="#kagebund1" attributeName="opacity" attributeType="XML"
+        from="0" to="1"
+        begin="0s" dur="300ms" fill="freeze"
+        />
+        <!-- Animation til Kagefyld 1 -->
+        <animate id="kagefyldAnimation1" xlink:href="#kagefyld1"
+        attributeName="y" attributeType="XML"
+        from="0" to="76.30859"
+        begin="kagefyldAnimation1Fade.end" dur="300ms" fill="freeze"
+        /> 
+        <animate id="kagefyldAnimation1Fade" xlink:href="#kagefyld1" 
+        attributeName="opacity" attributeType="XML"
+        from="0" to="1"
+        begin="kagebundAnimation1.end" dur="300ms" fill="freeze"
+        /> 
+        <!-- Animation til Kagebund 2 -->
+        <animate id="kagebundAnimation2" xlink:href="#kagebund2"
+        attributeName="y" attributeType="XML"
+        from="0" to="58.11914"
+        begin="kagebundAnimation2Fade.end" dur="300ms" fill="freeze"
+        />
+        <animate id="kagebundAnimation2Fade" xlink:href="#kagebund2" 
+        attributeName="opacity" attributeType="XML"
+        from="0" to="1"
+        begin="kagefyldAnimation1.end" dur="300ms" fill="freeze"
+        /> 
+        <!-- Animation til Kagefyld 2 -->
+        <animate id="kagefyldAnimation2" xlink:href="#kagefyld2"
+        attributeName="y" attributeType="XML"
+        from="0" to="49.90625"
+        begin="kagefyldAnimation2Fade.end" dur="300ms" fill="freeze"
+        />
+        <animate id ="kagefyldAnimation2Fade" xlink:href="#kagefyld2" attributeName="opacity" attributeType="XML"
+        from="0" to="1"
+        begin="kagebundAnimation2.end" dur="300ms" fill="freeze"
+        />
+        <!-- Animation til Kagebund 3 -->
+        <animate id="kagebundAnimation3" xlink:href="#kagebund3"
+        attributeName="y" attributeType="XML"
+        from="0" to="31.85742"
+        begin="kagebundAnimation3Fade.end" dur="300ms" fill="freeze"
+        />
+        <animate id="kagebundAnimation3Fade" xlink:href="#kagebund3"
+        attributeName="opacity" attributeType="XML"
+        from="0" to="1"
+        begin="kagefyldAnimation2.end" dur="300ms" fill="freeze"
+        />
+        <!-- Animation til Glasur -->
+        <animate id="glasurAnimation" xlink:href="#glasur"
+        attributeName="opacity" attributeType="XML"
+        from="0" to="1"
+        begin="kagebundAnimation3.end" dur="300ms" fill="freeze"  
+        />
+        </g>
+        </svg>
+	<h1><b>Chokoladefrabrikkens Blog</b></h1>
+	<p>Lækre chokolade opskrifter</p>
+	<nav class="w3-center w-inline">
+		<ul class="w3-ul w3-hoverable">
+			<li><a href="index.html">Startside</a></li>
+			<li><a href="index.html#team">Teamet</a></li>
+		</ul>
+	</nav>
+	</header>
+	<!-- Grid -->
+	<div class="w3-row">
+		<!-- Blog entries -->
+		<div class="w3-col l8 s12">
+			<!-- Blog entry -->
+			<article class="w3-card-4 w3-margin w3-white">
+				<img src="images/mette.jpg" alt="Mette Blomsterberg" style="width:100%">
+				<header class="w3-container w3-padding-8">
+					<h3><b>Mette Blomsterberg udgået pga. doping</b></h3>
+					<h5>Nede mette, <span class="w3-opacity">December 1, 2016</span></h5>
+				</header>
+				<section class="w3-container">
+					<p>Mette Blomsterberg er desværre udgået af den store bagedyst på grund af doping og andet snask...</p>
+					<div class="w3-row">
+						<div class="w3-col m8 s12">
+							<p><a class="w3-btn w3-padding-large w3-white w3-border w3-hover-border-black" href="kageNews3.html">LÆS MERE »</a></p>
+						</div>
+					</div>
+				</section>
+			</article>
+			<hr>
+			<!-- Blog entry -->
+			<article class="w3-card-4 w3-margin w3-white">
+				<img src="images/kagePosh.jpg"  alt="Julehygge" style="width:100%">
+				<header class="w3-container w3-padding-8">
+					<h3><b>Julehygge</b></h3>
+					<h5>Duften af kanel spreder sig igen.., <span class="w3-opacity">November 15, 2016</span></h5>
+				</header>
+				<section class="w3-container">
+					<p>Julen nærmer sig i hastige skridt, så skal julebageriet i gang igen i år og her på chokoladefabrikken er vi spændte på at fremvise alle de nye opskrifter vi har planer om at dele med jer!..</p>
+					<div class="w3-row">
+						<div class="w3-col m8 s12">
+							<p><a class="w3-btn w3-padding-large w3-white w3-border w3-hover-border-black" href="kageNews2.html">LÆS MERE »</a></p>
+						</div>
+					</div>
+				</section>
+			</article>
+		<!-- END BLOG ENTRIES -->
+		<!-- Blog entry -->
+			<article class="w3-card-4 w3-margin w3-white">
+			<a  href="kageNews1.html">
+				<img src="images/ingredients.png"  alt="Ny årstid, nye ingredienser" style="width:100%">
+			</a>
+			<header class="w3-container w3-padding-8">
+				<a href="kageNews1.html"><h3><b>Ny årstid, nye ingredienser</b></h3></a>
+				<h5>Lækre nye chokolade opskrifter, <span class="w3-opacity">September 10, 2016</span></h5>
+			</header>
+			<section class="w3-container">
+				<p>Hvem elsker ikke i disse kolde efterårsaftener at hygge i sofaen med en god varm kop kakao og et stort stykke chokoladekage...</p>
+				<div class="w3-row">
+					<div class="w3-col m8 s12">
+						<p><a class="w3-btn w3-padding-large w3-white w3-border w3-hover-border-black" href="kageNews1.html">LÆS MERE »</a></p>
+					</div>
+				</div>
+			</section>
+		</article>
+			<!-- END BLOG ENTRIES -->
+		</div>
+		<!-- Introduction menu -->
+		<aside class="w3-col l4 w3-hide-medium w3-hide-small">
+		<!-- Posts -->
+		<section class="w3-card-2 w3-margin">
+			<header class="w3-container w3-padding">
+			<h4>POPULÆRE OPSKRIFTER</h4>
+			</header>
+			<ul id="popularPosts" class="w3-ul w3-hoverable w3-white">
+			<li class="w3-padding-16">
+				<img src="images/kage1.png" alt="Chokoladekage" class="w3-left w3-margin-right" style="width:50px">
+				<a href="recipe.html"><span class="w3-large">Chokoladekage</span><br></a>
+			</li>
+			<li class="w3-padding-16">
+				<img src="images/kage2.png" alt="Chokoladekage med banan" class="w3-left w3-margin-right" style="width:50px">
+				<span class="w3-large">Chokoladekage med nødder</span><br>
+			</li>
+			<li class="w3-padding-16">
+				<img src="images/kage3.png" alt="Chokoladekage med banan" class="w3-left w3-margin-right" style="width:50px">
+				<span class="w3-large">Chokoladekage med glasur</span><br>
+			</li>
+			<li class="w3-padding-16 w3-hide-medium w3-hide-small">
+				<iframe width="300" height="250" src="https://www.youtube.com/embed/vtf8XeoE6kM" frameborder="0" allowfullscreen=""></iframe>
+				<br /><span class="w3-large">Mere kage på YouTube</span><br>
+				<span>Lækker Kitkat M&M's kage</span>
+			</li>
+			</ul>
+		</section>
+		</aside>
+		<!-- END Introduction Menu -->
+	</div>
+	<!-- END GRID -->
+</div>
+<!-- END w3-content -->
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+		<nav class="w3-center">
+		<ul class="w3-ul w3-hoverable">
+			<li><a href="index.html">Startside</a></li>
+			<li><a href="index.html#team">Teamet</a></li>
+			<li><a href="#top">Top</a></li>
+		</ul>
+	</nav>
+	<p>&copy; 2016 Chokoladefabrikken</p>
+	<a target="_blank" title="find os på Facebook" href="http://www.facebook.com/"><img alt="find os på Facebook" src="https://login.create.net/images/icons/user/facebook_30x30.png" border=0></a>
+	<a target="_blank" title="følg os på twitter" href="http://www.twitter.com/"><img alt="følg os på twitter" src="https://login.create.net/images/icons/user/twitter_30x30.png" border=0></a>
+</footer>
+
+</body>
+</html>
+
