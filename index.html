@@ -8,9 +8,9 @@
   <link rel="stylesheet" type="text/css" href="mainStylesheet.css">
 </head>
 <body>
-  <header class="container">
+  <header class="container" itemscope itemtype="http://schema.org/Organization" itemref="Organization" >
     <div class="row">
-      <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+      <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" itemprop="logo" >
         <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
         <g>
           <title>Logo</title>
@@ -84,7 +84,7 @@
         />
         </g>
         </svg>
-      <h1 class="col-sm-4">Chokoladefabrikken</h1>
+      <h1 class="col-sm-4" itemprop="name">Chokoladefabrikken</h1>
       <nav class="col-sm-8 text-right">
         <a href="#katalog"><p>Katalog</p></a>
         <a href="#team"><p>Teamet</p></a>
@@ -194,44 +194,47 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div itemscope itemprop="Person" itemtype="http://schema.org/Person" class="col-sm-4">
                     <div>
-                        <img src="images/peter.jpg">
-                        <h4>Peter</h4>
+                        <img itemprop="image" src="images/peter.jpg">
+                        <h4 itemprop="givenName">Peter</h4>
+                        <p itemprop="jobTitle">Kagemand</p>
                         <ul class="list-inline">
                             <li>
-                            	<a target="_blank" title="find os på Facebook" href="http://www.facebook.com/peterhaastrup.wentzel"><img alt="find os på Facebook" src="https://login.create.net/images/icons/user/facebook_30x30.png" border=0></a
+                            	<a target="_blank" title="find os på Facebook" itemprop="url" href="http://www.facebook.com/peterhaastrup.wentzel"><img alt="find os på Facebook" src="https://login.create.net/images/icons/user/facebook_30x30.png" border=0></a
                             ></li>
                             <li>
-                            	<a target="_blank" title="find os på linkedin" href="https://dk.linkedin.com/in/peter-wentzel-759295b2"><img alt="find os på linkedin" src="images/li.png" border=0></a>
+                            	<a target="_blank" title="find os på linkedin" itemprop="url" href="https://dk.linkedin.com/in/peter-wentzel-759295b2"><img alt="find os på linkedin" src="images/li.png" border=0></a>
                            </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div itemscope itemprop="Person" itemtype="http://schema.org/Person" class="col-sm-4">
                     <div>
-                        <img src="images/philip.jpg">
-                        <h4>Philip</h4>
+                        <img  itemprop="image" src="images/philip.jpg">
+                        <h4 itemprop="givenName">Philip</h4>
+                        <p itemprop="jobTitle">Kagemand</p>
                         <ul class="list-inline">
                             <li>
-                                <a target="_blank" title="find os på Facebook" href="http://www.facebook.com/PLACEHOLDER"><img alt="find os på Facebook" src="https://login.create.net/images/icons/user/facebook_30x30.png" border=0></a
+                                <a target="_blank" title="find os på Facebook" itemprop="url" href="http://www.facebook.com/PLACEHOLDER"><img alt="find os på Facebook" src="https://login.create.net/images/icons/user/facebook_30x30.png" border=0></a
                             ></li>
                             <li>
-                                <a target="_blank" title="find os på linkedin" href="https://dk.linkedin.com/in/PLACEHOLDER"><img alt="find os på linkedin" src="images/li.png" border=0></a>
+                                <a target="_blank" title="find os på linkedin" itemprop="url" href="https://dk.linkedin.com/in/PLACEHOLDER"><img alt="find os på linkedin" src="images/li.png" border=0></a>
                            </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div itemscope itemprop="Person" itemtype="http://schema.org/Person" class="col-sm-4">
                     <div>
-                        <img src="images/jeppe.jpg">
-                        <h4>Jeppe</h4>
+                        <img  itemprop="image" src="images/jeppe.jpg">
+                        <h4 itemprop="givenName">Jeppe</h4>
+                        <p itemprop="jobTitle">Kagemand</p>
                         <ul class="list-inline">
                 			<li>
-                                <a target="_blank" title="find os på Facebook" href="http://www.facebook.com/PLACEHOLDER"><img alt="find os på Facebook" src="https://login.create.net/images/icons/user/facebook_30x30.png" border=0></a
+                                <a target="_blank" title="find os på Facebook" itemprop="url" href="http://www.facebook.com/PLACEHOLDER"><img alt="find os på Facebook" src="https://login.create.net/images/icons/user/facebook_30x30.png" border=0></a
                             ></li>
                             <li>
-                                <a target="_blank" title="find os på linkedin" href="https://dk.linkedin.com/in/PLACEHOLDER"><img alt="find os på linkedin" src="images/li.png" border=0></a>
+                                <a target="_blank" title="find os på linkedin" itemprop="url" href="https://dk.linkedin.com/in/PLACEHOLDER"><img alt="find os på linkedin" src="images/li.png" border=0></a>
                            </li>
                         </ul>
                     </div>
@@ -242,7 +245,8 @@
     </section>
   <footer class="container">
 		<div class="row">
-			<p class="col-sm-4">&copy; 2016 Chokoladefabrikken</p>
+			<p class="col-sm-2" itemscope itemtype="http://schema.org/CreativeWork"><span itemprop="copyrightHolder">&copy; 2016 Chokoladefabrikken </span></p>
+      <p class="col-sm-2" id="Organization"><span itemprop="email" class="glyphicon glyphicon glyphicon-envelope"</span> SDU@SUD.dk</p>
 			<ul class="col-sm-8">
         <li class="col-sm-1">
           <a target="_blank" title="find os på Facebook" href="http://www.facebook.com/"><img alt="find os på Facebook" src="https://login.create.net/images/icons/user/facebook_30x30.png" border=0></a>
