@@ -10,13 +10,13 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="recipeStyle.css">
 </head>
-<body>
+<body vocab="http://schema.org/" typeof="Recipe">
     <div class="container-fluid" id="wrapper">
         <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                    <a class="navbar-brand" href="#">Chokoladefabrikken</a></div>
+                    <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> -->
+                    <a class="navbar-brand" href="index.html">Chokoladefabrikken</a></div>
                 <div class="collapse navbar-collapse" id="defaultNavbar1">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html">Forside</a></li>
@@ -26,62 +26,52 @@
             </div>
         </nav>
         <article id="main">
-            <div class="hrecipe">
-                <h1 class="fn">Chokoladekage </h1>
-                <p class="summary recipeParagraph">
-                    Denne chokoladekage er så fantastisk at alle ville nyde den. denne smagsoplevelse må du bage ikke gå glip af!
+            <div>
+                <h1>Chokoladekage </h1>
+                <p property="description">
+                    Denne chokoladekage er så fantastisk at alle ville nyde den. denne smagsoplevelse må du bare ikke gå glip af!
                 </p>
-                <p class="recipeParagraph">Nok til<span class="yield">12 personer</span>.</p>
-                <p class="recipeParagraph">
-                    Indesendt af
-                    <div class="vcard">
-                        <span class="fn">Peter Wentzel</span>
-                        <img class="photo" src="images/peter.jpg" width="50" height="50" />
-                        <a target="_blank" title="find os på linkedin" href="https://dk.linkedin.com/in/peter-wentzel-759295b2"><span class="glyphicon glyphicon-user" </span></a>
-                        <a class="email" href="mailto:Pewen16@student.sdu.dk"><span class="glyphicon glyphicon-envelope" </span></a>
-                        <p class="recipeParagraph">Offentliggjort <span class="published"><span class="value-title" title="2016-10-14T10:05:37-01:00"> </span>14. okt. 2016</span>
-                        </p>
-                    </div>
-                </p>
+                <p>Nok til <span property="recipeYield">12 personer</span>.</p>
+                <p>Indesendt af</p>
+                <div typeof="CreativeWork">
+                    <span property="author">Peter Wentzel</span>
+                    <img src="images/peter.jpg" width="50" height="50"  property="image"/>
+                    <a target="_blank" title="find os på linkedin" href="https://dk.linkedin.com/in/peter-wentzel-759295b2" property="url"><span class="glyphicon glyphicon-user" </span></a>
+                    <a  href="mailto:Pewen16@student.sdu.dk"><span class="glyphicon glyphicon-envelope" </span></a>
+                    <p>Offentliggjort: <span property="datePublished" content="2016-10-14">14. okt. 2016</span></p>
+                </div>
         </article>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="thumbnail"><img src="images/ingredients.png" alt="chokoladekage" class="image-fill">
+                    <div class="thumbnail" proerty="image"><img src="images/ingredients.png" alt="chokoladekage" class="image-fill">
                         <div class="caption">
-                            <h3>Ingredienser</h3>
+                            <h3 >Ingredienser</h3>
                             <ul>
-                                <li class="ingredient">
-                                    <span class="value">6</span>
-                                    <span class="type">spsk.</span> Kakao
+                                <li>
+                                    <span property="recipeIngredient">6 spsk. Kakao</span>
                                 </li>
-                                <li class="ingredient">
-                                    <span class="value">250</span>
-                                    <span class="type">gram</span> Hvedemel
+                                <li>
+                                    <span property="recipeIngredient">250 gram Hvedemel</span>
                                 </li>
-                                <li class="ingredient">
-                                    <span class="value">300</span>
-                                    <span class="type">gram</span> Sukker
+                                <li>
+                                    <span property="recipeIngredient">300 gram Sukker</span>
                                 </li>
-                                <li class="ingredient">
-                                    <span class="value">1</span>
-                                    <span class="type">tsk.</span> Natron
+                                <li>
+                                    <span property="recipeIngredient">1 tsk. Natron</span>
                                 </li>
-                                <li class="ingredient">
-                                    <span class="value">1</span>
-                                    <span class="type">tsk.</span> Bagepulver
+                                <li>
+                                    <span property="recipeIngredient">1 tsk. Bagepulver</span>
                                 </li>
-                                <li class="ingredient">
-                                    <span class="value">1</span>
-                                    <span class="type">knsp.</span> Salt
+                                <li>
+                                    <span property="recipeIngredient"> 1 knsp. Salt</span>
                                 </li>
-                                <li class="ingredient">
-                                    <span class="value">2</span>
-                                    <span class="type">stk.</span> Æg
+                                <li>
+                                    <span property="recipeIngredient">2 stk. Æg</span>
                                 </li>
                                 <li>
                                     Du kan også bruge nogle
-                                    <span class="ingredient">hasselnødder</span> som pynt.
+                                    <span property="recipeIngredient">hasselnødder</span> som pynt.
                                 </li>
                             </ul>
                         </div>
@@ -90,35 +80,33 @@
                 <div class="col-md-6">
                     <div class="thumbnail"><img src="images/recipeKage2.png" alt="chokoladekage" class="image-fill">
                         <div class="caption">
-                            <h3>Fremgangsmåde</h3>
-                            <p class="recipeParagraph">Sigt de tørre dele sammen. Kom æg, smeltet smør og vand i og pisk med mixer. Dejen hældes i en bradepande ca. 23x33 cm. Bages på næst nederste rille ca. 35 minutter ved 170 grader C. alm. ovn. Kagen skal ikke bages for meget, den skal være lidt klæg i midten, så er den mums.
+                            <h3 property="recipeInstructions">Fremgangsmåde</h3>
+                            <p>Sigt de tørre dele sammen. Kom æg, smeltet smør og vand i og pisk med mixer. Dejen hældes i en bradepande ca. 23x33 cm. Bages på næst nederste rille ca. 35 minutter ved 170 grader C. alm. ovn. Kagen skal ikke bages for meget, den skal være lidt klæg i midten, så er den mums.
                             </p>
                             <h3>Tilberedning</h3>
-                            <p class="recipeParagraph">Tilberednings tid<span class="duration"><span class="value-title" title="PT15M"> </span>Ca. 15 min</span>
+                            <p>Tilberednings tid<span property="prepTime" content="PT15M">Ca. 15 min</span>
                             </p>
-                            <p class="recipeParagraph">Bages i <span class="duration"><span class="value-title" title="PT35M"></span>35 min</span> ved 170 C i alm. own.</p>
+                            <p>Bages i <span property="cookTime" content="PT35M">35 min</span> ved <span property="cookingMethod">170 C i alm. own. </span></p>
                             </strong>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container" >
                 <div class="row">
                     <div class="col-md-12">
                         <div class="caption">
-                            <h1 class="fn">Anmeldelser</h1>
-                            <div class="hreview">
-                                <span class="reviewer vcard">Anmelder: <span class="fn">Lone</span> -
-                                <abbr class="dtreviewed" title="2016-10-18">Okt. 18, 2016</abbr></span>
-                                <div class="description item vcard">
-                                    <p class="recipeParagraph">Er super lækker og smager meget godt, prøv evt. også at smide bananer i!</p>
+                            <h1>Anmeldelser</h1>
+                            <div typeof="UserComments">
+                                <p>Anmelder: <span property="creator">Lone</span> - <span property="commentTime" content="2016-10-18">Okt. 18, 2016</span><p>
+                                <div>
+                                    <p property="commentText">Er super lækker og smager meget godt, prøv evt. også at smide bananer i!</p>
                                 </div>
                             </div>
-                            <div class="hreview">
-                                <span class="reviewer vcard">Anmelder: <span class="fn">Palle</span> -
-                                <abbr class="dtreviewed" title="2016-12-21">dec. 21, 2016</abbr></span>
-                                <div class="description item vcard">
-                                    <p class="recipeParagraph">Nem og dejlig</p>
+                            <div typeof="UserComments">
+                                <p>Anmelder: <span property="creator">Palle</span> - <span property="commentTime" content="2016-12-21">Dec. 21, 2016</span></p>
+                                <div>
+                                    <p property="commentText">Nem og dejlig</p>
                                 </div>
                             </div>
                         </div>
