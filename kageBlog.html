@@ -6,7 +6,7 @@
     <!-- Spiders/web crawler vil indeksere hele  hjemmeside. -->
     <meta name="robots" content="index, follow">
     <!--Søgemaskiner (Google,Bing,Yahoo) viser/bruger meta-tags i deres søgeresultater, derfor er det vigtigt at skrive en GOD beskrivelse af websitet -->
-    <meta name="description" content="En simpel blog lavet ud fra POSH(Plain Old semantic html) princippet som omhandler chokoladekager" />
+    <meta name="headline" content="En simpel blog lavet ud fra POSH(Plain Old semantic html) princippet som omhandler chokoladekager" />
     <!--Keyword til brug for søgemaskiner til at indeksere ens hjemmeside -->
     <meta name="keywords" content="Cake, Blog,semantic html, POSH" />
     <!-- W3 CSS framework -->
@@ -27,11 +27,11 @@
 	}
 	a{
 		display: block;
-		text-decoration:none;
+		about-decoration:none;
 	}
 	</style>
 </head>
-<body class="w3-light-grey">
+<body class="w3-light-grey" vocab="http://schema.org/">
 
 <!-- w3-content defines a container for fixed size centered content,
 and is wrapped around the whole page content, except for the footer in this example -->
@@ -114,10 +114,10 @@ and is wrapped around the whole page content, except for the footer in this exam
         </svg>
 	<h1><b>Chokoladefrabrikkens Blog</b></h1>
 	<p>Lækre chokolade opskrifter</p>
-	<nav class="w3-center w-inline">
+	<nav class="w3-center w-inline" typeof="Thing">
 		<ul class="w3-ul w3-hoverable">
-			<li><a href="index.html">Startside</a></li>
-			<li><a href="index.html#team">Teamet</a></li>
+			<li><a property="url" href="index.html">Startside</a></li>
+			<li><a property="url" href="index.html#team">Teamet</a></li>
 		</ul>
 	</nav>
 	</header>
@@ -126,53 +126,63 @@ and is wrapped around the whole page content, except for the footer in this exam
 		<!-- Blog entries -->
 		<div class="w3-col l8 s12">
 			<!-- Blog entry -->
-			<article class="w3-card-4 w3-margin w3-white">
-				<img src="images/mette.jpg" alt="Mette Blomsterberg" style="width:100%">
+			<article class="w3-card-4 w3-margin w3-white" typeof="Blog">
+				<a href="kageNews3.html" property="url">
+					<img property="image" src="images/mette.jpg" alt="Mette Blomsterberg" style="width:100%">
+				</a>
 				<header class="w3-container w3-padding-8">
-					<h3><b>Mette Blomsterberg udgået pga. doping</b></h3>
-					<h5>Nede mette, <span class="w3-opacity">December 1, 2016</span></h5>
+					<a property="url" href="kageNews3.html">
+						<h3 property="headline"><b>Mette Blomsterberg udgået pga. doping</b></h3>
+						<h5>Nede mette, <span class="w3-opacity" property="datePublished" content="2016-12-1">December 1, 2016</span></h5>
+					</a>
 				</header>
 				<section class="w3-container">
-					<p>Mette Blomsterberg er desværre udgået af den store bagedyst på grund af doping og andet snask...</p>
+					<p property="about" typeof="Person" resource="https://da.wikipedia.org/wiki/Mette_Blomsterberg"><span property="name">Mette Blomsterberg</span er desværre udgået af den store bagedyst på grund af doping og andet snask...</p>
 					<div class="w3-row">
 						<div class="w3-col m8 s12">
-							<p><a class="w3-btn w3-padding-large w3-white w3-border w3-hover-border-black" href="kageNews3.html">LÆS MERE »</a></p>
+							<p><a class="w3-btn w3-padding-large w3-white w3-border w3-hover-border-black" property="url" href="kageNews3.html">LÆS MERE »</a></p>
 						</div>
 					</div>
 				</section>
 			</article>
 			<hr>
 			<!-- Blog entry -->
-			<article class="w3-card-4 w3-margin w3-white">
-				<img src="images/kagePosh.jpg"  alt="Julehygge" style="width:100%">
+			<article class="w3-card-4 w3-margin w3-white" typeof="Blog">
+				<a property="url" href="kageNews2.html">
+					<img property="image" src="images/kagePosh.jpg"  alt="Julehygge" style="width:100%">
+				</a>
 				<header class="w3-container w3-padding-8">
-					<h3><b>Julehygge</b></h3>
-					<h5>Duften af kanel spreder sig igen.., <span class="w3-opacity">November 15, 2016</span></h5>
+					<a property="url" href="kageNews2.html">
+						<h3 property="headline"><b>Julehygge</b></h3>
+						<h5>Duften af kanel spreder sig igen.., <span class="w3-opacity" property="datePublished" content="2016-11-15">November 15, 2016</span></h5>
+					</a>
 				</header>
 				<section class="w3-container">
-					<p>Julen nærmer sig i hastige skridt, så skal julebageriet i gang igen i år og her på chokoladefabrikken er vi spændte på at fremvise alle de nye opskrifter vi har planer om at dele med jer!..</p>
+					<p property="about">Julen nærmer sig i hastige skridt, så skal julebageriet i gang igen i år og her på chokoladefabrikken er vi spændte på at fremvise alle de nye opskrifter vi har planer om at dele med jer!..</p>
 					<div class="w3-row">
 						<div class="w3-col m8 s12">
-							<p><a class="w3-btn w3-padding-large w3-white w3-border w3-hover-border-black" href="kageNews2.html">LÆS MERE »</a></p>
+							<p><a class="w3-btn w3-padding-large w3-white w3-border w3-hover-border-black" property="url" href="kageNews2.html">LÆS MERE »</a></p>
 						</div>
 					</div>
 				</section>
 			</article>
 		<!-- END BLOG ENTRIES -->
 		<!-- Blog entry -->
-			<article class="w3-card-4 w3-margin w3-white">
-			<a  href="kageNews1.html">
-				<img src="images/ingredients.png"  alt="Ny årstid, nye ingredienser" style="width:100%">
+			<article class="w3-card-4 w3-margin w3-white" typeof="Blog">
+			<a  href="kageNews1.html" property="url">
+				<img property="image" src="images/ingredients.png"  alt="Ny årstid, nye ingredienser" style="width:100%">
 			</a>
 			<header class="w3-container w3-padding-8">
-				<a href="kageNews1.html"><h3><b>Ny årstid, nye ingredienser</b></h3></a>
-				<h5>Lækre nye chokolade opskrifter, <span class="w3-opacity">September 10, 2016</span></h5>
+				<a property="url" href="kageNews1.html">
+					<h3 property="headline"><b>Ny årstid, nye ingredienser</b></h3>
+					<h5>Lækre nye chokolade opskrifter, <span class="w3-opacity" property="datePublished" content="2016-10-10">September 10, 2016</span></h5>
+				</a>
 			</header>
 			<section class="w3-container">
-				<p>Hvem elsker ikke i disse kolde efterårsaftener at hygge i sofaen med en god varm kop kakao og et stort stykke chokoladekage...</p>
+				<p property="about">Hvem elsker ikke i disse kolde efterårsaftener at hygge i sofaen med en god varm kop kakao og et stort stykke chokoladekage...</p>
 				<div class="w3-row">
 					<div class="w3-col m8 s12">
-						<p><a class="w3-btn w3-padding-large w3-white w3-border w3-hover-border-black" href="kageNews1.html">LÆS MERE »</a></p>
+						<p><a class="w3-btn w3-padding-large w3-white w3-border w3-hover-border-black" property="url" href="kageNews1.html">LÆS MERE »</a></p>
 					</div>
 				</div>
 			</section>
@@ -182,25 +192,25 @@ and is wrapped around the whole page content, except for the footer in this exam
 		<!-- Introduction menu -->
 		<aside class="w3-col l4 w3-hide-medium w3-hide-small">
 		<!-- Posts -->
-		<section class="w3-card-2 w3-margin">
+		<section class="w3-card-2 w3-margin" typeof="Recipe">
 			<header class="w3-container w3-padding">
 			<h4>POPULÆRE OPSKRIFTER</h4>
 			</header>
 			<ul id="popularPosts" class="w3-ul w3-hoverable w3-white">
 			<li class="w3-padding-16">
-				<img src="images/kage1.png" alt="Chokoladekage" class="w3-left w3-margin-right" style="width:50px">
-				<a href="recipe.html"><span class="w3-large">Chokoladekage</span><br></a>
+				<img property="image" src="images/kage1.png" alt="Chokoladekage" class="w3-left w3-margin-right" style="width:50px">
+				<a property="url" href="recipe.html"><span class="w3-large">Chokoladekage</span><br></a>
 			</li>
 			<li class="w3-padding-16">
-				<img src="images/kage2.png" alt="Chokoladekage med banan" class="w3-left w3-margin-right" style="width:50px">
+				<img property="image"src="images/kage2.png" alt="Chokoladekage med banan" class="w3-left w3-margin-right" style="width:50px">
 				<span class="w3-large">Chokoladekage med nødder</span><br>
 			</li>
 			<li class="w3-padding-16">
-				<img src="images/kage3.png" alt="Chokoladekage med banan" class="w3-left w3-margin-right" style="width:50px">
+				<img property="image" src="images/kage3.png" alt="Chokoladekage med banan" class="w3-left w3-margin-right" style="width:50px">
 				<span class="w3-large">Chokoladekage med glasur</span><br>
 			</li>
 			<li class="w3-padding-16 w3-hide-medium w3-hide-small">
-				<iframe width="300" height="250" src="https://www.youtube.com/embed/vtf8XeoE6kM" frameborder="0" allowfullscreen=""></iframe>
+				<iframe property="video" width="300" height="250" src="https://www.youtube.com/embed/vtf8XeoE6kM" frameborder="0" allowfullscreen=""></iframe>
 				<br /><span class="w3-large">Mere kage på YouTube</span><br>
 				<span>Lækker Kitkat M&M's kage</span>
 			</li>
@@ -213,17 +223,17 @@ and is wrapped around the whole page content, except for the footer in this exam
 </div>
 <!-- END w3-content -->
 <!-- Footer -->
-<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-		<nav class="w3-center">
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top" typeof="Thing">
+	<nav class="w3-center">
 		<ul class="w3-ul w3-hoverable">
-			<li><a href="index.html">Startside</a></li>
-			<li><a href="index.html#team">Teamet</a></li>
-			<li><a href="#top">Top</a></li>
+			<li><a property="url" href="index.html">Startside</a></li>
+			<li><a property="url" href="index.html#team">Teamet</a></li>
+			<li><a property="url" href="#top">Top</a></li>
 		</ul>
 	</nav>
 	<p>&copy; 2016 Chokoladefabrikken</p>
-	<a target="_blank" title="find os på Facebook" href="http://www.facebook.com/"><img alt="find os på Facebook" src="https://login.create.net/images/icons/user/facebook_30x30.png" border=0></a>
-	<a target="_blank" title="følg os på twitter" href="http://www.twitter.com/"><img alt="følg os på twitter" src="https://login.create.net/images/icons/user/twitter_30x30.png" border=0></a>
+	<a property="url" target="_blank" title="find os på Facebook" href="http://www.facebook.com/"><img alt="find os på Facebook" src="https://login.create.net/images/icons/user/facebook_30x30.png" border=0></a>
+	<a property="url" target="_blank" title="følg os på twitter" href="http://www.twitter.com/"><img alt="følg os på twitter" src="https://login.create.net/images/icons/user/twitter_30x30.png" border=0></a>
 </footer>
 
 </body>
